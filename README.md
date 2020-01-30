@@ -1,8 +1,9 @@
 ---
 description: >-
-  Collection of cheatsheet used when preparing for Offensive Security Certified
-  Professional (OSCP)
+  Hello! This is a collection of cheatsheet used when preparing for Offensive
+  Security Certified Professional (OSCP). I use this as a notebook for all
+  golden pentesting tips and tricks.
 ---
 
-# Cheatsheet
+# What is this?
 
