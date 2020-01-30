@@ -1,6 +1,8 @@
 # Table of contents
 
 * [What is this?](README.md)
+* [Reverse shell](reverse-shell.md)
+* [MSFVenom](untitled.md)
 * [SSH](ssh.md)
 * [SSH Tunneling](ssh-tunneling.md)
 * [PHP RCE](php-rce.md)
@@ -12,5 +14,5 @@
 * [Port Knocking](port-knocking.md)
 * [Webdav](webdav.md)
 * [XML RPC](xml-rpc.md)
-* [MSFVenom](untitled.md)
+* [NTDS.dit](ntds.dit.md)
 
