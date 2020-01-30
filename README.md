@@ -7,9 +7,9 @@ description: >-
 
 # Study Notes
 
-\*\*\*\*[**refabr1k's OSCP Cheat Sheet**](https://refabr1k.gitbook.io/oscp/) ****
+\*\*\*\*[**https://refabr1k.gitbook.io/oscp/**](https://refabr1k.gitbook.io/oscp/)\*\*\*\*
 
-## Must reads
+## Must read
 
 * Windows Privilege Escalation - [https://www.fuzzysecurity.com/tutorials/16.html](https://www.fuzzysecurity.com/tutorials/16.html) 
 * Linux Privilege Escalation - [https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)
@@ -18,18 +18,29 @@ description: >-
 * hakluke's OSCP guide pt. 3 - [https://medium.com/@hakluke/haklukes-ultimate-oscp-guide-part-3-practical-hacking-tips-and-tricks-c38486f5fc97](https://medium.com/@hakluke/haklukes-ultimate-oscp-guide-part-3-practical-hacking-tips-and-tricks-c38486f5fc97)
 * Abatchy's OSCP guide - [https://www.abatchy.com/2017/03/how-to-prepare-for-pwkoscp-noob](https://www.abatchy.com/2017/03/how-to-prepare-for-pwkoscp-noob)
 * TJnull's OSCP study guide - [https://www.netsecfocus.com/oscp/2019/03/29/The\_Journey\_to\_Try\_Harder-\_TJNulls\_Preparation\_Guide\_for\_PWK\_OSCP.html](https://www.netsecfocus.com/oscp/2019/03/29/The_Journey_to_Try_Harder-_TJNulls_Preparation_Guide_for_PWK_OSCP.html)
-* [https://411hall.github.io/OSCP-Preparation](https://411hall.github.io/OSCP-Preparation)
+* James Hall's OSCP Prep - [https://411hall.github.io/OSCP-Preparation/](https://411hall.github.io/OSCP-Preparation/)
+* KongWenBin OSCP Review - [https://kongwenbin.wordpress.com/2017/02/23/officially-oscp-certified/](https://kongwenbin.wordpress.com/2017/02/23/officially-oscp-certified/)
 
-### Must do
+## Must do
 
 * TJnull's HTB and Vulnhub machines - [https://www.netsecfocus.com/oscp/2019/03/29/The\_Journey\_to\_Try\_Harder-\_TJNulls\_Preparation\_Guide\_for\_PWK\_OSCP.html\#vulnerable-machines](https://www.netsecfocus.com/oscp/2019/03/29/The_Journey_to_Try_Harder-_TJNulls_Preparation_Guide_for_PWK_OSCP.html#vulnerable-machines)
 * Georgia Weidman's Cybrary Pentest Course \(Free!\) - [https://www.cybrary.it/course/advanced-penetration-testing/](https://www.cybrary.it/course/advanced-penetration-testing/)
-* 
+* OverTheWire: Bandit linux challenges - [https://overthewire.org/wargames/bandit/](https://overthewire.org/wargames/bandit/)
+* Windows/Linux Privesc Workshop \(lpeworkshop\) - [https://github.com/sagishahar/lpeworkshop](https://github.com/sagishahar/lpeworkshop)
+* Metasploit Unleashed - [https://www.offensive-security.com/metasploit-unleashed/](https://www.offensive-security.com/metasploit-unleashed/)
+* **Try harder**
 
-
-### Must use 
+## Must use 
 
 * SecLists wordlists - [https://github.com/danielmiessler/SecLists](https://github.com/danielmiessler/SecLists)
-* 
+* PentestMonkey cheatsheet - [http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
+* PayloadsAllTheThings cheatsheet - [https://github.com/swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
+* OSCP Prep Discord Channel - [https://discord.gg/2AG6TCm](https://discord.gg/2AG6TCm)
+* SecWiki windows kernel exploits - [https://github.com/SecWiki/windows-kernel-exploits](https://github.com/SecWiki/windows-kernel-exploits)
+* AutoRecon.py - [https://github.com/Tib3rius/AutoRecon](https://github.com/Tib3rius/AutoRecon)
+* OBS Recorder for OSCP EXAM - [https://obsproject.com/](https://obsproject.com/)
+
+
+
 ## 
 
