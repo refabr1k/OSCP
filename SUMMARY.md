@@ -1,6 +1,6 @@
 # Table of contents
 
-* [What is this?](README.md)
+* [Study Notes](README.md)
 * [Reverse shell](reverse-shell.md)
 * [MSFVenom](untitled.md)
 * [SSH](ssh.md)
