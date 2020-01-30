@@ -6,6 +6,7 @@
 * [SSH](ssh.md)
 * [SSH Tunneling](ssh-tunneling.md)
 * [PHP RCE](php-rce.md)
+* [SSRF](ssrf.md)
 * [DNS](dns.md)
 * [SNMP](snmp.md)
 * [SMTP](smtp.md)

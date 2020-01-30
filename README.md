@@ -5,7 +5,7 @@ description: >-
   golden pentesting tips and tricks.
 ---
 
-# OSCP Cheatsheet
+# What is this?
 
 ## [https://refabr1k.gitbook.io/oscp/](https://refabr1k.gitbook.io/oscp/)
 
