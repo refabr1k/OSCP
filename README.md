@@ -9,7 +9,7 @@ description: >-
 
 {% embed url="https://refabr1k.gitbook.io/oscp/" %}
 
-## 
+:bulb: Use the search function to look for a command.
 
 ## Must read
 
