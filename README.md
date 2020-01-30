@@ -7,7 +7,9 @@ description: >-
 
 # Study Notes
 
-\*\*\*\*[**https://refabr1k.gitbook.io/oscp/**](https://refabr1k.gitbook.io/oscp/)\*\*\*\*
+{% embed url="https://refabr1k.gitbook.io/oscp/" %}
+
+## 
 
 ## Must read
 
