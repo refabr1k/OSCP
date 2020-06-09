@@ -5,7 +5,7 @@ description: >-
   all golden pentesting tips and tricks.
 ---
 
-# Study Notes
+# OSCP Study Notes
 
 {% embed url="https://refabr1k.gitbook.io/oscp/" %}
 

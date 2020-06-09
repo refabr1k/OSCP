@@ -1,4 +1,4 @@
-# DNS
+# T:53 - DNS
 
 If know hostname add to `/etc/hosts`
 
