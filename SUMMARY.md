@@ -1,23 +1,28 @@
 # Table of contents
 
 * [OSCP Study Notes](README.md)
-* [EXPLOITATION](exploitation.md)
-* [SSH](ssh.md)
 * [SSH Tunneling](ssh-tunneling.md)
-* [T:53 - DNS](dns.md)
-* [U:161 - SNMP](snmp.md)
 * [SMTP](smtp.md)
-* [Wordpress](wordpress.md)
-* [T:445 - SMB](smb.md)
 * [Port Knocking](port-knocking.md)
-* [Webdav](webdav.md)
 * [File Transfers](file-transfers.md)
 * [Buffer Overflow](buffer-overflow.md)
 * [AD attacks](active-directory-attacks.md)
 * [NTDS.dit](ntds.dit.md)
 
+## INFO GATHERING
+
+* [T:22 - SSH](info-gathering/ssh.md)
+* [T:53 - DNS](info-gathering/dns.md)
+* [T:88 - Kerberos](info-gathering/t-88-kerberos.md)
+* [U:161 - SNMP](info-gathering/snmp.md)
+* [T:445 - SMB](info-gathering/smb.md)
+* [T:1098,1099 - Java RMI](info-gathering/t-1098-1099-java-rmi.md)
+* [T:8009 - AJP](info-gathering/t-8009-ajp.md)
+
 ## Web
 
+* [Webdav](web/webdav.md)
+* [Wordpress](web/wordpress.md)
 * [SSRF](web/ssrf.md)
 * [XML RPC](web/xml-rpc.md)
 * [Untitled](web/untitled.md)
