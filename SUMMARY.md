@@ -34,9 +34,11 @@
 
 ## Privesc - Windows <a id="privesc"></a>
 
-* [Looking for Privesc openings](privesc/looking-for-privesc-openings.md)
 * [Powershell / Cmd](privesc/powershell-cmd.md)
 * [Privesc Openings](privesc/privesc-openings.md)
+* [LonelyPotato - SeImpersonatePrivilege](privesc/lonelypotato-seimpersonateprivilege.md)
+* [Enable RDP @ Firewall](privesc/looking-for-privesc-openings.md)
+* [NTLM \(Pass The Hash\)](privesc/ntlm-pass-the-hash.md)
 
 ## Windows
 

@@ -277,7 +277,7 @@ powershell "Get-Acl -Path hklm:\System\CurrentControlSet\services\regsvc | fl"
 
 ```
 
-![](../.gitbook/assets/image%20%2830%29.png)
+![](../.gitbook/assets/image%20%2833%29.png)
 
 Create exploit eg. Msfvenom exploit.exe and place in writable folder like 'temp'
 
