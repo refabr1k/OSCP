@@ -1,6 +1,10 @@
 # Table of contents
 
 * [OSCP Study Notes](README.md)
+* [Steganography](steganography.md)
+* [Kali USB with persistence memory](kali-usb-with-persistence-memory.md)
+* [useful tools](useful-tools.md)
+* [Understanding ICACLS permissions](understanding-icacls-permissions.md)
 
 ## INFO GATHERING
 
@@ -42,7 +46,6 @@
 * [Basic checks](privesc-linux/basic-checks.md)
 * [Upgrading Shells](privesc-linux/upgrading-shells.md)
 * [SUID](privesc-linux/suid.md)
-* [Untitled](privesc-linux/untitled.md)
 
 ## Privesc - Windows <a id="privesc"></a>
 
@@ -63,4 +66,9 @@
 * [Meterpreter](metasploit/meterpreter/README.md)
   * [Pivoting](metasploit/meterpreter/pivoting.md)
   * [Windows Post Exploitation](metasploit/meterpreter/windows-post-exploitation.md)
+* [Untitled](metasploit/untitled.md)
+
+## Unsorted
+
+* [other notes](unsorted/other-notes.md)
 
