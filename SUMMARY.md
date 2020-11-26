@@ -24,6 +24,7 @@
 * [Webdav](web/webdav.md)
 * [Wordpress](web/wordpress.md)
 * [XML RPC](web/xml-rpc.md)
+* [SQL Injection](web/sql-injection.md)
 * [SSRF](web/ssrf.md)
 
 ## EXPLOITATION <a id="exploitation-1"></a>
