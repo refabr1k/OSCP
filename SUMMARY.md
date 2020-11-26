@@ -34,6 +34,7 @@
 
 ## Privesc - Windows <a id="privesc"></a>
 
+* [Looking for Privesc openings](privesc/looking-for-privesc-openings.md)
 * [Powershell / Cmd](privesc/powershell-cmd.md)
 
 ## Windows
