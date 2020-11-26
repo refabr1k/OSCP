@@ -14,5 +14,5 @@ Port forward to kali
 vncviewer 127.0.0.1:<PORT> -passwd secretFile
 ```
 
-![](../.gitbook/assets/image%20%2826%29.png)
+![](../.gitbook/assets/image%20%2827%29.png)
 
