@@ -47,3 +47,37 @@ find / -user root -perm -4000 -type f 2>/dev/null -exec ls -ldb {} \;
 
 ## Juicy files
 
+```bash
+/etc/*issue
+/etc/*release
+/proc/version
+/etc/profile
+/etc/passwd
+/etc/shadow
+/root/.bash_history
+/var/log/dmessage
+/var/mail/root
+/var/spool/cron/crontabs/root
+
+
+# can see what is the PID or ID of running process, correspond to /etc/passwd see if you can tell which user
+/proc/self/status
+
+# Can check what 'user agents', if you have access you may be able to do code execution modifying 'user agents'
+/proc/self/environ
+
+# Anything blocking us from bruteforcing?
+etc/pam.d/system-auth
+etc/fail2ban/fail2ban.conf
+
+
+# OSX / macOS
+/etc/fstab
+/etc/master.passwd 
+/etc/resolv.conf
+/etc/sudoers
+/etc/sysctl.conf
+```
+
+
+
