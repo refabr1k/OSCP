@@ -29,6 +29,8 @@
 
 ## EXPLOITATION <a id="exploitation-1"></a>
 
+* [Buffer Overflow](exploitation-1/buffer-overflow.md)
+* [Bruteforce](exploitation-1/bruteforce.md)
 * [PHP rce](exploitation-1/php-rce.md)
 * [Compiling](exploitation-1/compiling-code.md)
 * [msfvenom](exploitation-1/untitled-1.md)
