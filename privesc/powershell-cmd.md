@@ -1,4 +1,4 @@
-# Powershell / Cmd
+# Basic checks / powershell
 
 ## Default powershell path
 
@@ -171,13 +171,21 @@ findstr /si password *.xml *.ini *.txt
 
 ### Juicy files to look
 
-#### Plaintext or base64 encoded passwords
+#### Plaintext or base64 encoded passwords / config files
 
 ```c
 C:\sysprep.inf
 C:\sysprep\sysprep.xml
 %WINDIR%\Panther\Unattend\Unattended.xml
 %WINDIR%\Panther\Unattended.xml 
+%SYSTEMROOT%repairsystem
+%SYSTEMROOT%repairSAM
+%SYSTEMROOT%repairSAM
+%WINDIR%win.ini
+%SYSTEMDRIVE%boot.ini
+%WINDIR%Panthersysprep.inf
+%WINDIR%system32configAppEvent.Evt
+
 ```
 
 #### Encrypted password in plaintext. Can use PowerSploit's Get-GPPPassword module

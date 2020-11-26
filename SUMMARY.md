@@ -38,10 +38,11 @@
 * [Basic checks](privesc-linux/basic-checks.md)
 * [Upgrading Shells](privesc-linux/upgrading-shells.md)
 * [SUID](privesc-linux/suid.md)
+* [Untitled](privesc-linux/untitled.md)
 
 ## Privesc - Windows <a id="privesc"></a>
 
-* [Powershell / Cmd](privesc/powershell-cmd.md)
+* [Basic checks / powershell](privesc/powershell-cmd.md)
 * [Privesc Openings](privesc/privesc-openings.md)
 * [LonelyPotato - SeImpersonatePrivilege](privesc/lonelypotato-seimpersonateprivilege.md)
 * [Enable RDP @ Firewall](privesc/looking-for-privesc-openings.md)
