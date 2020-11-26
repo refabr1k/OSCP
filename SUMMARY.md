@@ -1,15 +1,13 @@
 # Table of contents
 
 * [OSCP Study Notes](README.md)
-* [SSH Tunneling](ssh-tunneling.md)
-* [SMTP](smtp.md)
-* [Port Knocking](port-knocking.md)
-* [File Transfers](file-transfers.md)
-* [Buffer Overflow](buffer-overflow.md)
 
 ## INFO GATHERING
 
-* [22 tcp - SSH](info-gathering/ssh.md)
+* [Port Knocking](info-gathering/port-knocking.md)
+* [22 tcp - SSH](info-gathering/ssh/README.md)
+  * [SSH Tunneling](info-gathering/ssh/ssh-tunneling.md)
+* [25 tcp - SMTP](info-gathering/smtp.md)
 * [53 tcp/udp - DNS](info-gathering/dns.md)
 * [88 tcp - Kerberos](info-gathering/t-88-kerberos.md)
 * [161 udp - SNMP](info-gathering/snmp.md)
@@ -29,6 +27,7 @@
 
 ## EXPLOITATION <a id="exploitation-1"></a>
 
+* [File Transfers](exploitation-1/file-transfers.md)
 * [Buffer Overflow](exploitation-1/buffer-overflow.md)
 * [Bruteforce](exploitation-1/bruteforce.md)
 * [PHP rce](exploitation-1/php-rce.md)

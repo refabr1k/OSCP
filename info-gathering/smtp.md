@@ -1,4 +1,4 @@
-# SMTP
+# 25 tcp - SMTP
 
 ### STMP username enum \(smtp-user-enum\)
 
