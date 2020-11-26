@@ -29,6 +29,7 @@
 ## EXPLOITATION <a id="exploitation-1"></a>
 
 * [PHP RCE](exploitation-1/php-rce.md)
+* [Compiling code](exploitation-1/compiling-code.md)
 * [MSFVenom](exploitation-1/untitled-1.md)
 * [Reverse shell](exploitation-1/reverse-shell.md)
 * [Using ENV to escape Bad Characters](exploitation-1/using-env-to-escape-bad-characters.md)
