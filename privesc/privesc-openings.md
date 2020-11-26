@@ -228,7 +228,7 @@ accesschk.exe -qdws Users C:\Windows\ /accepteula
 accesschk.exe -wuvc daclsvc /accepteula
 ```
 
-![](../.gitbook/assets/image%20%2822%29.png)
+![](../.gitbook/assets/image%20%2823%29.png)
 
 ### Querying Service 
 
@@ -277,7 +277,7 @@ powershell "Get-Acl -Path hklm:\System\CurrentControlSet\services\regsvc | fl"
 
 ```
 
-![](../.gitbook/assets/image%20%2837%29.png)
+![](../.gitbook/assets/image%20%2838%29.png)
 
 Create exploit eg. Msfvenom exploit.exe and place in writable folder like 'temp'
 

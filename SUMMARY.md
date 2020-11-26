@@ -35,6 +35,10 @@
 
 ## PRIVESC - LINUX
 
+* [Basic checks](privesc-linux/basic-checks.md)
+* [Upgrading Shells](privesc-linux/upgrading-shells.md)
+* [SUID](privesc-linux/suid.md)
+
 ## Privesc - Windows <a id="privesc"></a>
 
 * [Powershell / Cmd](privesc/powershell-cmd.md)
