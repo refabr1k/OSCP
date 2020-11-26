@@ -57,3 +57,10 @@
 * [NTDS.dit](windows/ntds.dit.md)
 * [Active Directory](windows/active-directory-attacks.md)
 
+## Metasploit
+
+* [Basic Usage](metasploit/basic-usage.md)
+* [Meterpreter](metasploit/meterpreter/README.md)
+  * [Pivoting](metasploit/meterpreter/pivoting.md)
+  * [Windows Post Exploitation](metasploit/meterpreter/windows-post-exploitation.md)
+
