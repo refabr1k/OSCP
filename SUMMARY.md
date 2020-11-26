@@ -36,6 +36,7 @@
 
 * [Looking for Privesc openings](privesc/looking-for-privesc-openings.md)
 * [Powershell / Cmd](privesc/powershell-cmd.md)
+* [Privesc Openings](privesc/privesc-openings.md)
 
 ## Windows
 
