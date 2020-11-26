@@ -1,8 +1,27 @@
 # Basic Usage
 
+## Searching
+
+```bash
+#Searching modules
+msf > grep http search oracle
+
+#Search using tags
+msf > search type:auxiliary name:smb
+msf > search platform:aix
+msf > search port:22
+msf > search type:post
+msf > search author:dookie
+msf > search cve:2011 author:jduck platform:linux
+```
+
+## Configuration
+
 ```bash
 #Saving global variables (to type less)
-msf > setg LHOST 192.168.1.101msf > setg RHOSTS 192.168.1.0/24msf > setg RHOST 192.168.1.136
+msf > setg LHOST 192.168.1.101
+msf > setg RHOSTS 192.168.1.0/24
+msf > setg RHOST 192.168.1.136
 msf > save
 
 
