@@ -1,4 +1,4 @@
-# T:445 - SMB
+# 445 tcp - SMB
 
 _references:_ 
 

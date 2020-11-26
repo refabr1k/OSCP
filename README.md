@@ -1,8 +1,8 @@
 ---
 description: >-
   Hello! This is a collection of cheatsheet used when I was preparing for
-  Offensive Security Certified Professional (OSCP). I use this as a notebook for
-  all golden pentesting tips and tricks.
+  Offensive Security Certified Professional (OSCP). I use this note book as
+  references when I'm performing pentesting.
 ---
 
 # OSCP Study Notes

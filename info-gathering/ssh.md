@@ -1,4 +1,4 @@
-# T:22 - SSH
+# 22 tcp - SSH
 
 ### [OpenSSH 2.3 &lt; 7.7 - Username Enumeration](https://www.exploit-db.com/exploits/45233)
 

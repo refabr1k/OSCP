@@ -1,4 +1,4 @@
-# U:161 - SNMP
+# 161 udp - SNMP
 
 ### NMAP Scan
 

@@ -1,4 +1,4 @@
-# T:88 - Kerberos
+# 88 tcp - Kerberos
 
 #### ENUM KEBEROS USERS
 
