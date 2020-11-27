@@ -1,11 +1,11 @@
 ---
 description: >-
-  Hello! This is a collection of cheatsheet used when I was preparing for
-  Offensive Security Certified Professional (OSCP). I use this note book as
-  references when I'm performing pentesting.
+  Hello! refabr1k is my handle and I'm a pentester. I originally created this
+  for my OSCP prep, but now I use this note book as reference when I'm
+  performing pentesting. Feel free to use for your gain!
 ---
 
-# OSCP Study Notes
+# refabr1k's Pentest Notebook
 
 {% embed url="https://refabr1k.gitbook.io/oscp/" %}
 

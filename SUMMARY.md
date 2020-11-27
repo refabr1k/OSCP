@@ -1,6 +1,6 @@
 # Table of contents
 
-* [OSCP Study Notes](README.md)
+* [refabr1k's Pentest Notebook](README.md)
 * [Steganography](steganography.md)
 * [Kali USB with persistence memory](kali-usb-with-persistence-memory.md)
 * [useful tools](useful-tools.md)
