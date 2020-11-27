@@ -82,8 +82,8 @@
 
 * [Bash scripts](scripts/bash-scripts.md)
 * [ping sweep](scripts/ping-sweep.md)
-* [\(DNS\) zonetransfer\_check.sh](scripts/dns-zonetransfer_check.sh.md)
 * [iptables-counter.sh](scripts/iptables-counter.sh.md)
+* [\(DNS\) zonetransfer\_check.sh](scripts/dns-zonetransfer_check.sh.md)
 * [\(DNS\) dns-rev-brute.sh](scripts/dns-dns-rev-brute.sh.md)
 * [\(DNS\) dns-fwd-brute.sh](scripts/dns-dns-fwd-brute.sh.md)
 * [\(SMB\) vuln-scan.sh](scripts/smb-vuln-scan.sh.md)
