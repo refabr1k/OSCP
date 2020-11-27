@@ -76,7 +76,11 @@
 
 ## eLearnSecurity eJPT
 
-* [Notes](elearnsecurity-ejpt/untitled.md)
+* [eJPT notes](elearnsecurity-ejpt/untitled.md)
+
+## OSWP
+
+* [OSWP notes](oswp/oswp-notes.md)
 
 ## Scripts
 

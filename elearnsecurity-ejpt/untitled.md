@@ -1,4 +1,4 @@
-# Notes
+# eJPT notes
 
 ## Routing
 
