@@ -34,13 +34,17 @@
 
 * [File Transfers](exploitation-1/file-transfers.md)
 * [Buffer Overflow](exploitation-1/buffer-overflow.md)
-* [Bruteforce](exploitation-1/bruteforce.md)
+* [Bruteforce](exploitation-1/bruteforce/README.md)
+  * [Hashcat](exploitation-1/bruteforce/hashcat.md)
+  * [Ophcrack \(rainbow tables\)](exploitation-1/bruteforce/ophcrack-rainbow-tables.md)
+  * [John The Ripper](exploitation-1/bruteforce/john-the-ripper.md)
 * [PHP rce](exploitation-1/php-rce.md)
 * [Compiling](exploitation-1/compiling-code.md)
 * [msfvenom](exploitation-1/untitled-1.md)
 * [Reverse shell](exploitation-1/reverse-shell.md)
 * [Using ENV to escape Bad Characters](exploitation-1/using-env-to-escape-bad-characters.md)
 * [shellshock](exploitation-1/shellshock.md)
+* [Ncat Persistent Backdoor](exploitation-1/ncat-persistent-backdoor.md)
 
 ## PRIVESC - LINUX
 

