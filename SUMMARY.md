@@ -58,7 +58,9 @@
 ## Windows
 
 * [NTDS.dit](windows/ntds.dit.md)
-* [Active Directory](windows/active-directory-attacks.md)
+* [Responder / SMB Relay](windows/active-directory-attacks.md)
+* [Attacking AD](windows/attacking-ad/README.md)
+  * [AD Hacking Lab Setup](windows/attacking-ad/ad-hacking-lab-setup.md)
 
 ## Metasploit
 

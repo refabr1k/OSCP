@@ -2,7 +2,7 @@
 description: Hacking Active directory
 ---
 
-# Active Directory
+# Responder / SMB Relay
 
 ### LLMNR Poisoning
 
