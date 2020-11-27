@@ -68,7 +68,6 @@
 * [Meterpreter](metasploit/meterpreter/README.md)
   * [Pivoting](metasploit/meterpreter/pivoting.md)
   * [Windows Post Exploitation](metasploit/meterpreter/windows-post-exploitation.md)
-* [Untitled](metasploit/untitled.md)
 
 ## Unsorted
 
@@ -84,7 +83,8 @@
 
 ## Scripts
 
-* [Bash scripts](scripts/bash-scripts.md)
+* [get port from nmap](scripts/get-port-from-nmap.md)
+* [Curl response](scripts/bash-scripts.md)
 * [ping sweep](scripts/ping-sweep.md)
 * [iptables-counter.sh](scripts/iptables-counter.sh.md)
 * [\(DNS\) zonetransfer\_check.sh](scripts/dns-zonetransfer_check.sh.md)
