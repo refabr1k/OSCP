@@ -38,7 +38,7 @@ Using this, we can weaponize the XSS by crafting a payload to send the victim's 
 
 If a victim triggers the XSS payload, the private cookies would be stolen and sent to the jar.txt file.
 
-![](../.gitbook/assets/image%20%2860%29.png)
+![](../.gitbook/assets/image%20%2861%29.png)
 
 We can then use the cookies and impersonate as the user to login.
 
