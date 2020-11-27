@@ -22,6 +22,7 @@
 
 ## Web
 
+* [XSS cookie stealing](web/xss.md)
 * [PHP](web/php.md)
 * [Webdav](web/webdav.md)
 * [Wordpress](web/wordpress.md)
@@ -75,7 +76,6 @@
 
 ## eLearnSecurity eJPT
 
-* [XSS](elearnsecurity-ejpt/xss.md)
 * [eJPT notes](elearnsecurity-ejpt/untitled.md)
 
 ## OSWP
