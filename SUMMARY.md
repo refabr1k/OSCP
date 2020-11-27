@@ -75,6 +75,7 @@
 
 ## eLearnSecurity eJPT
 
+* [XSS](elearnsecurity-ejpt/xss.md)
 * [eJPT notes](elearnsecurity-ejpt/untitled.md)
 
 ## OSWP
