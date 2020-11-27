@@ -76,5 +76,5 @@
 
 ## eLearnSecurity eJPT
 
-* [Untitled](elearnsecurity-ejpt/untitled.md)
+* [Notes](elearnsecurity-ejpt/untitled.md)
 
