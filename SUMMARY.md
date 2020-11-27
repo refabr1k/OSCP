@@ -76,5 +76,6 @@
 
 ## eLearnSecurity eJPT
 
+* [Bash scripts](elearnsecurity-ejpt/bash-scripts.md)
 * [Notes](elearnsecurity-ejpt/untitled.md)
 
