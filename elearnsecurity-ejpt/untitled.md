@@ -32,6 +32,14 @@ nmap -sC -sV -p- 10.10.10.10
 nmap -sU -sV 10.10.10.10
 ```
 
+### nbtscan
+
+```text
+nbtscan -A 10.10.10.10
+```
+
+![](../.gitbook/assets/image%20%2863%29.png)
+
 ## Web Pentesting
 
 ### Banner Grabbing
