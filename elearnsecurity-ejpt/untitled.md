@@ -32,13 +32,62 @@ nmap -sC -sV -p- 10.10.10.10
 nmap -sU -sV 10.10.10.10
 ```
 
-### nbtscan
+### SMB/SAMBA
+
+#### nbtscan
 
 ```text
 nbtscan -A 10.10.10.10
 ```
 
 ![](../.gitbook/assets/image%20%2863%29.png)
+
+#### net view
+
+```text
+net view 10.10.10.10
+```
+
+#### net use
+
+```c
+# c$ - shares in c drive
+# admin$ - windows install directory
+# ipc$ - inter process use (not viewable on browser)
+
+# using no user/pass login
+
+net use \\10.10.10.10\IPC$ '' /u:''
+# The command completed successfully.
+
+net use \\10.10.10.10\ADMIN$ '' /u:
+# System error 5 has occurred.
+
+# Access is denied.
+```
+
+#### enum
+
+```bash
+# enumerate users
+enum -U 10.10.10.10
+
+# enumerate password policy
+enum -P 10.10.10.10
+```
+
+#### nmblookup
+
+```text
+nmblookup -A 10.10.10.10
+```
+
+#### smbclient
+
+```bash
+# no password mode -N
+smbclient -L //10.10.10.10 -N
+```
 
 ## Web Pentesting
 
