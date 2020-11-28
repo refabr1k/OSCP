@@ -63,8 +63,6 @@ nmap -v -p 139,445 --script smb-os-discovery 10.11.24.85
 nmap -v -p 139,445 --script vuln <ipaddress_here>
 ```
 
-\`\`
-
 ### NBTScan
 
 `nbtscan -r 10.11.24.0/24`
