@@ -46,7 +46,13 @@ nmblookup -A 192.168.0.5
 
 ### SMBClient
 
-`smbclient -L` [`\\madirish-dt -I 192.168.0.1`](file:///madirish-dt%20-I%20192.168.0.1) `-N`
+```bash
+# use smb1
+smbclient -L //10.10.10.10 --option='client min protocol=NT1' -U"administrator"
+
+# no pass
+smbclient -L //10.10.10.10 -N
+```
 
 ### Nmap Scan
 
