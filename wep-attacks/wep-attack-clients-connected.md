@@ -1,4 +1,4 @@
-# WEP Attack - Clients connected
+# WEP Attack \(OPEN\) - Clients connected
 
 ### 
 

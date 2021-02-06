@@ -88,8 +88,9 @@
 
 * [Getting started](oswp-notes.md)
 * [WEP Attacks](wep-attacks/README.md)
-  * [WEP Attack - Clients connected](wep-attacks/wep-attack-clients-connected.md)
-  * [WEP Attack - Clientless](wep-attacks/wep-attack-clientless.md)
+  * [WEP Attack \(OPEN\) - Clients connected](wep-attacks/wep-attack-clients-connected.md)
+  * [WEP Attack  \(OPEN\) - Clientless](wep-attacks/wep-attack-clientless.md)
+  * [WEP Attack \(SKA\)](wep-attacks/wep-attack-ska.md)
 * [WPA/WPA2 Attacks](wpa-wpa2-attacks.md)
 
 ## Scripts
