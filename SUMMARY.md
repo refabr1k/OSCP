@@ -107,3 +107,7 @@
 * [\(SMTP\) vrfy.py](scripts/smtp-vrfy.py.md)
 * [\(SNMP\) mib-check.sh](scripts/snmp-mib-check.sh.md)
 
+## Zeroday vulnerabilities explained
+
+* [2020-12 Solarwind supply chain](zeroday-vulnerabilities-explained/solarwind.md)
+
